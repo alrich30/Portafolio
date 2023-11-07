@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Richard | Portafolio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css/fonts.css" />
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css/header.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css/nav.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href="style.css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css/footer.css">
+
+    <style>
+        html, body {
+            margin: 0;
+        }
+        body{
+            background-color: var(--white2);
+        }
+        .linea-azul {
+            margin-top: 4px;
+            height: 0.05rem;
+            padding-bottom: 0;
+            border: 0;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary), rgba(0, 0, 0, 0));
+        }
+        .linea-blanca {
+            margin-top: 4px;
+            margin-bottom: 60px;
+            height: 0.05rem;
+            border: 0;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
+
+        }
+        .h3-skillset-contact {
+            font-size: 2rem;
+            color: #fff;
+            padding-top: 3rem;
+        }
+        .h3-experience-portfolio {
+            font-size: 2rem;
+            color: var(--gray3);
+            padding-top: 6.5rem;
+            text-align: center;
+            margin: 0 ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="circle" src="assets/img/logos/large.png" alt="logo large" />
+        <h1>Richard Torres</h1>
+        <hr class="linea-azul"></hr>
+        <h2>Desarrollador Fullstack</h2>
+        <video autoplay loop muted>
+            <source src="assets/video/hero.mp4" />
+        </video>
+    </header>
+    <div id="menu">
+        <a class="refresh" href="indexP.html"><img class="circle" src="assets/img/logos/small.png">  Richard <small>Desarrollador FullStack</small></a> <button id= boton-sandwich>☰</button>
+    </div> 
+    
+    <nav id="navbar">
+        <ul class="enlaces">
+            <li class="enlace">Portfolio</li>
+            <li class="enlace">Skillset</li>
+            <li class="enlace">Experience</li>
+            <li class="enlace">Contact</li>
+       </ul>
+    </nav>
+    
+    <main>
+        
+        <section id="portfolio">  
+        <h3 class="h3-experience-portfolio">P O R T F O L I O</h3>
+        <hr class="linea-azul"> 
+            <div>
+                <button>
+                    <img src="assets/img/portfolio/1.png" />
+                    <h4>Proyecto 1</h4>
+                </button>
+            </div>    
+                <button>
+                    <img src="assets/img/portfolio/2.png" />
+                    <h4>Proyecto 2</h4>
+                </button>
+                <button>
+                    <img src="assets/img/portfolio/3.png" />
+                    <h4>Proyecto 3</h4>
+                </button>
+            </div>
+        </section>
+        <section id="skillsets">
+            
+            <h3 class="h3-skillset-contact">S K I L L S E T</h3>
+            <hr class="linea-blanca">
+
+            <div class="bubbles">
+            
+             
+            
+            </div>
+            <div id="contenedor-skillset">
+                <div class="fila-skillset">
+                    <img src="assets/img/skillset/html.svg">
+                    <span class="comment-bubble">CSS</span>
+                    
+                </div>
+                <div class="fila-skillset">
+                    <img src="assets/img/skillset/html.svg">
+                    <span class="comment-bubble">HTML</span>
+                </div>        
+                <div class="fila-skillset">
+                    <img src="assets/img/skillset/css.svg">
+                    <span class="comment-bubble">Javascript</span>
+                </div>
+                <div class="fila-skillset">
+                    <img src="assets/img/skillset/js.svg">
+                    <span class="comment-bubble">JAVA</span>
+                </div>     
+                    <!--  <img class="lenguaje-programacion" src="assets/img/skillset/git.svg">
+                    <span>GIT</span> -->     
+            </div>
+        </section>    
+        
+        <section id="experience">
+            <h3 class="h3-experience-portfolio">E X P E R I E N C E</h3>
+            <hr class="linea-azul">
+
+            <div id="contenedor-experience">
+                <div class="experience-img" >
+                    <img height="150px" width="150px" src="assets/img/experience/1.svg">
+                </div> 
+                <h4>T r a b a j o 1</h4>
+                <div class="experience-img" >
+                    <img height="150px" width="150px" src="assets/img/experience/2.svg">
+                </div> 
+                <h4>T r a b a j o 2</h4>
+            </div>
+        </section>
+
+
+        <section id="contact">
+            <h3 class="h3-skillset-contact">C O N T A C T</h3>
+            <hr class="linea-blanca">
+                <form id="contenedor-contact" method="POST">
+                    <label for="email">Your email:</label> 
+                    <input type="email" id="email"  required> 
+                    <label for="textarea">Your message:</label> 
+                    <textarea rows="5" cols="" id="textarea"></textarea>
+                    <button>Send</button>
+                </form>    
+            <div id="socials">
+                <a class="icono-enlace" href="https://github.com/alrich30?tab=repositories"><img src="assets/img/social/github.png"></a>
+            </div>
+        </section>
+    </main>    
+    <footer>
+        <small>Developed and designed by Richard Torres. &copy2021. All rights reserved.</small> 
+    </footer>       
+    <script src="javascript/nav.js"></script>  
+    <script src="javascript/fixed.js"></script>       
+</body>
+</html>

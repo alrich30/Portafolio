@@ -45,9 +45,10 @@
         .h3-experience-portfolio {
             font-size: 2rem;
             color: var(--gray3);
-            padding-top: 6.5rem;
+            padding-top: 5.5rem;
             text-align: center;
             margin: 0 ;
+            margin-bottom: 32px;
         }
     </style>
 </head>
@@ -62,7 +63,22 @@
             <source src="assets/video/hero.mp4" />
         </video>
     </header>
-    <div id="menu">
+    <nav id="navbar">
+        <div>
+            <a href="indexP.html">
+                <img class="circle" src="assets/img/logos/small.png" alt="small logo" />
+                <span>Tu nombre <small>Desarrollador Frontend</small></span>
+            </a>
+            <button id="hamburger">☰</button>
+        </div>
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#skillset">Skillset</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!--<div id="menu">
         <a class="refresh" href="indexP.html"><img class="circle" src="assets/img/logos/small.png">  Richard <small>Desarrollador FullStack</small></a> <button id= boton-sandwich>☰</button>
     </div> 
     
@@ -73,7 +89,7 @@
             <li class="enlace">Experience</li>
             <li class="enlace">Contact</li>
        </ul>
-    </nav>
+    </nav>-->
     
     <main>
         
@@ -164,7 +180,7 @@
     <footer>
         <small>Developed and designed by Richard Torres. &copy2021. All rights reserved.</small> 
     </footer>       
-    <script src="javascript/nav.js"></script>  
+    <script src="javascript/main.js"></script>  
     <script src="javascript/fixed.js"></script>       
 </body>
 </html>

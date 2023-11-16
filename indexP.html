@@ -5,9 +5,11 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Richard | Portafolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" />-->
+    <link rel="stylesheet" type="text/css" href="node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="node_modules/eins-modal/dist/css/eins-modal.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" media="screen" href="style.css/fonts.css" />
     <link rel='stylesheet' type='text/css' media='screen' href='style.css/header.css'>
@@ -150,13 +152,13 @@
             <hr class="linea-azul">
 
             <div id="contenedor-experience">
-                <div class="experience-img" >
+                <a data-modal-id="myModal" class="experience-img">
                     <img height="150px" width="150px" src="assets/img/experience/1.svg">
-                </div> 
+                </a> 
                 <h4>T r a b a j o 1</h4>
-                <div class="experience-img" >
+                <a data-modal-id="myModal" class="experience-img">
                     <img height="150px" width="150px" src="assets/img/experience/2.svg">
-                </div> 
+                </a> 
                 <h4>T r a b a j o 2</h4>
             </div>
         </section>
@@ -179,8 +181,18 @@
     </main>    
     <footer>
         <small>Developed and designed by Richard Torres. &copy2021. All rights reserved.</small> 
-    </footer>       
+    </footer>
+    <div id="myModal" class="eins-modal">
+        <div class="eins-modal-content">
+          <div class="eins-modal-close"></div>
+      
+          Mi primer trabajo
+          
+          <button class="eins-modal-close-button">OK</button>
+        </div>
+      </div>       
     <script src="javascript/main.js"></script>  
-    <script src="javascript/fixed.js"></script>       
+    <script src="javascript/fixed.js"></script> 
+    <script src="/node_modules/eins-modal/dist/js/eins-modal.min.js"></script>      
 </body>
 </html>

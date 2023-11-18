@@ -1,0 +1,34 @@
+html, body {
+    margin: 0;
+}
+body{
+    background-color: var(--white2);
+}
+.linea-azul {
+    margin-top: 4px;
+    height: 0.05rem;
+    padding-bottom: 0;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--primary), rgba(0, 0, 0, 0));
+}
+.linea-blanca {
+    margin-top: 4px;
+    margin-bottom: 60px;
+    height: 0.05rem;
+    border: 0;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), var(--white), rgba(0, 0, 0, 0));
+
+}
+.h3-skillset-contact {
+    font-size: 2rem;
+    color: #fff;
+    padding-top: 3rem;
+}
+.h3-experience-portfolio {
+    font-size: 2rem;
+    color: var(--gray3);
+    padding-top: 5.5rem;
+    text-align: center;
+    margin: 0 ;
+    margin-bottom: 32px;
+}
